@@ -34,6 +34,7 @@
         [vcs addObject:newVC];
     }
     
+    //集成顶部滑动切换
     WSContainerController *containVC = [WSContainerController containerControllerWithSubControlers:vcs parentController:self];
     containVC.navigationBarBackgrourdColor = [UIColor yellowColor];
     

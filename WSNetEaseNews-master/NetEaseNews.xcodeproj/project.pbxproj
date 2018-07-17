@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5AAAD720FDA1B60061AC50 /* WSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AAAD520FDA1B50061AC50 /* WSChannel.m */; };
 		651D64951C4506DD00DAF34E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D63941C4506DD00DAF34E /* AFHTTPSessionManager.m */; };
 		651D64961C4506DD00DAF34E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D63971C4506DD00DAF34E /* AFNetworkReachabilityManager.m */; };
 		651D64971C4506DD00DAF34E /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D63991C4506DD00DAF34E /* AFSecurityPolicy.m */; };
@@ -53,7 +54,6 @@
 		651D64CA1C4506DD00DAF34E /* WSNewsContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D64201C4506DD00DAF34E /* WSNewsContainerController.m */; };
 		651D64CB1C4506DD00DAF34E /* WSNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D64221C4506DD00DAF34E /* WSNewsController.m */; };
 		651D64CC1C4506DD00DAF34E /* WSAds.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D64251C4506DD00DAF34E /* WSAds.m */; };
-		651D64CD1C4506DD00DAF34E /* WSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D64271C4506DD00DAF34E /* WSChannel.m */; };
 		651D64CE1C4506DD00DAF34E /* WSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D64291C4506DD00DAF34E /* WSComment.m */; };
 		651D64CF1C4506DD00DAF34E /* WSContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D642B1C4506DD00DAF34E /* WSContent.m */; };
 		651D64D01C4506DD00DAF34E /* WSImageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 651D642D1C4506DD00DAF34E /* WSImageContent.m */; };
@@ -140,6 +140,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B5AAAD520FDA1B50061AC50 /* WSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSChannel.m; sourceTree = "<group>"; };
+		5B5AAAD620FDA1B60061AC50 /* WSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSChannel.h; sourceTree = "<group>"; };
 		651D63751C45069D00DAF34E /* NetEaseNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651D63931C4506DD00DAF34E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		651D63941C4506DD00DAF34E /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
@@ -237,8 +239,6 @@
 		651D64221C4506DD00DAF34E /* WSNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSNewsController.m; sourceTree = "<group>"; };
 		651D64241C4506DD00DAF34E /* WSAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAds.h; sourceTree = "<group>"; };
 		651D64251C4506DD00DAF34E /* WSAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAds.m; sourceTree = "<group>"; };
-		651D64261C4506DD00DAF34E /* WSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSChannel.h; sourceTree = "<group>"; };
-		651D64271C4506DD00DAF34E /* WSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSChannel.m; sourceTree = "<group>"; };
 		651D64281C4506DD00DAF34E /* WSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSComment.h; sourceTree = "<group>"; };
 		651D64291C4506DD00DAF34E /* WSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSComment.m; sourceTree = "<group>"; };
 		651D642A1C4506DD00DAF34E /* WSContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSContent.h; sourceTree = "<group>"; };
@@ -354,6 +354,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B5AAAD820FDE5DD0061AC50 /* listNews */ = {
+			isa = PBXGroup;
+			children = (
+				651D64211C4506DD00DAF34E /* WSNewsController.h */,
+				651D64221C4506DD00DAF34E /* WSNewsController.m */,
+			);
+			path = listNews;
+			sourceTree = "<group>";
+		};
+		5B5AAAD920FDE6240061AC50 /* NewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				651D641B1C4506DD00DAF34E /* WSContentController.h */,
+				651D641C1C4506DD00DAF34E /* WSContentController.m */,
+			);
+			path = NewDetail;
+			sourceTree = "<group>";
+		};
 		651D636C1C45069D00DAF34E = {
 			isa = PBXGroup;
 			children = (
@@ -594,14 +612,12 @@
 		651D64181C4506DD00DAF34E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B5AAAD920FDE6240061AC50 /* NewDetail */,
+				5B5AAAD820FDE5DD0061AC50 /* listNews */,
 				651D641F1C4506DD00DAF34E /* WSNewsContainerController.h */,
 				651D64201C4506DD00DAF34E /* WSNewsContainerController.m */,
-				651D64211C4506DD00DAF34E /* WSNewsController.h */,
-				651D64221C4506DD00DAF34E /* WSNewsController.m */,
 				651D64191C4506DD00DAF34E /* WSCommentController.h */,
 				651D641A1C4506DD00DAF34E /* WSCommentController.m */,
-				651D641B1C4506DD00DAF34E /* WSContentController.h */,
-				651D641C1C4506DD00DAF34E /* WSContentController.m */,
 				651D641D1C4506DD00DAF34E /* WSImageContentController.h */,
 				651D641E1C4506DD00DAF34E /* WSImageContentController.m */,
 			);
@@ -611,10 +627,10 @@
 		651D64231C4506DD00DAF34E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5B5AAAD620FDA1B60061AC50 /* WSChannel.h */,
+				5B5AAAD520FDA1B50061AC50 /* WSChannel.m */,
 				651D64241C4506DD00DAF34E /* WSAds.h */,
 				651D64251C4506DD00DAF34E /* WSAds.m */,
-				651D64261C4506DD00DAF34E /* WSChannel.h */,
-				651D64271C4506DD00DAF34E /* WSChannel.m */,
 				651D64281C4506DD00DAF34E /* WSComment.h */,
 				651D64291C4506DD00DAF34E /* WSComment.m */,
 				651D642A1C4506DD00DAF34E /* WSContent.h */,
@@ -992,7 +1008,6 @@
 				651D64DD1C4506DD00DAF34E /* WSNewsCell.m in Sources */,
 				651D64B01C4506DD00DAF34E /* SDWebImagePrefetcher.m in Sources */,
 				651D64B61C4506DD00DAF34E /* UIImageView+WebCache.m in Sources */,
-				651D64CD1C4506DD00DAF34E /* WSChannel.m in Sources */,
 				651D64CB1C4506DD00DAF34E /* WSNewsController.m in Sources */,
 				651D64BD1C4506DD00DAF34E /* main.m in Sources */,
 				651D64C61C4506DD00DAF34E /* WSRollCell.m in Sources */,
@@ -1007,6 +1022,7 @@
 				651D64D01C4506DD00DAF34E /* WSImageContent.m in Sources */,
 				651D64B21C4506DD00DAF34E /* UIImage+GIF.m in Sources */,
 				651D64B41C4506DD00DAF34E /* UIImage+WebP.m in Sources */,
+				5B5AAAD720FDA1B60061AC50 /* WSChannel.m in Sources */,
 				651D64CA1C4506DD00DAF34E /* WSNewsContainerController.m in Sources */,
 				651D64A91C4506DD00DAF34E /* NSData+ImageContentType.m in Sources */,
 				651D64AB1C4506DD00DAF34E /* SDWebImageCompat.m in Sources */,

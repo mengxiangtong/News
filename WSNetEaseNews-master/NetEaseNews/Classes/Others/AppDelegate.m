@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "WSTabBarController.h"
+//#import "WSTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -21,9 +21,9 @@
     
     self.window = [[UIWindow alloc] initWithFrame:kScreenSize];
     
-    WSTabBarController *tabBar = [[WSTabBarController alloc] init];
-    
-    self.window.rootViewController = tabBar;
+    UIStoryboard *sb1 = [UIStoryboard storyboardWithName:@"News" bundle:nil];
+    UIViewController *vc1 = [sb1 instantiateInitialViewController];
+    self.window.rootViewController = vc1;
     
     [self.window makeKeyAndVisible];
     

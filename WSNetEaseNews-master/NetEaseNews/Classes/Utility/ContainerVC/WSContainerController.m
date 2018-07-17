@@ -97,8 +97,10 @@ static NSString *CellID = @"ControllerCell";
         
     }else{
         
-        self.navigationView.frame = CGRectMake(0, 0, width, 44);
+        self.navigationView.frame = CGRectMake(0, 0 +20, width, 44);
     }
+    
+    self.navigationView.backgroundColor = [UIColor yellowColor];
     
     self.flowLayout.itemSize = self.collectionView.bounds.size;
     
@@ -145,7 +147,7 @@ static NSString *CellID = @"ControllerCell";
         flowLayout.minimumInteritemSpacing = 0;
         
         //设置collectionView的属性
-        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 66, self.view.bounds.size.width, self.view.bounds.size.height - 80) collectionViewLayout:flowLayout];
         collectionView.pagingEnabled = YES;
         _collectionView = collectionView;
         [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CellID];

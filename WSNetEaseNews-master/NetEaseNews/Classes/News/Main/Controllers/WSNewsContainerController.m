@@ -10,8 +10,6 @@
 #import "WSContainerController.h"
 #import "WSNewsController.h"
 #import "WSChannel.h"
-#import "WSSearchController.h"
-#import "WSDayNewsController.h"
 
 @interface WSNewsContainerController ()
 
@@ -37,40 +35,22 @@
     }
     
     WSContainerController *containVC = [WSContainerController containerControllerWithSubControlers:vcs parentController:self];
-    containVC.navigationBarBackgrourdColor = [UIColor whiteColor];
+    containVC.navigationBarBackgrourdColor = [UIColor yellowColor];
     
-    [self loadInterface];
 }
 
 
 - (void)loadInterface {
-    
-    //titleView
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"navbar_netease"]];
-    self.navigationItem.titleView = imageView;
-    
-    //leftitem
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"top_navi_bell_normal"] style:UIBarButtonItemStylePlain target:self action:@selector(leftItemClick)];
-    self.navigationItem.leftBarButtonItem = leftItem;
-    
-    //rightItem
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"search_icon"] style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];
-    self.navigationItem.rightBarButtonItem = rightItem;
-    
-    
+
 }
 
 - (void)leftItemClick {
     
-    WSDayNewsController *dayNews = [WSDayNewsController dayNews];
-    [self.navigationController pushViewController:dayNews animated:YES];
+
 }
 
 - (void)rightItemClick {
-    
-    WSSearchController *searchVC = [[WSSearchController alloc] init];
-    
-    [self.navigationController pushViewController:searchVC animated:YES];
+
     
 }
 
